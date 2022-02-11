@@ -7,18 +7,22 @@ import java.util.List;
 import lombok.Getter;
 
 
+
+
 @Getter
 public class TurmaBancoDados extends Turma{
 
 	
-private List<String> alunosBancoDados = new ArrayList<String>();
+	 private List<String> listaAlunosBancoDados = new ArrayList<String>();
 
 	
 	public TurmaBancoDados() {
 		
 		super("Banco de Dados");
 		
-		this.alunosBancoDados.addAll(new ArrayList<String> (Arrays.asList(
+		
+		
+		this.listaAlunosBancoDados.addAll(new ArrayList<String> (Arrays.asList(
 				"Vitor Hugo Lima", 
 				"Esther Rodrigues",
 				"Nathan Nascimento",
@@ -32,9 +36,24 @@ private List<String> alunosBancoDados = new ArrayList<String>();
 				"Thales Farias",
 				"Dra. Alana Porto")));
 		
+	
+		this.setTotalAlunos(this.listaAlunosBancoDados.size());
 	}
 	
-	public void exibeAlunos() {
-		System.out.println(this.alunosBancoDados);
+	@Override
+	public String getInformacoesTurma() {
+		var infoTurma = "Nome da turma: " + this.getNomeTurma() + "\n\n";
+
+		for (String aluno : this.listaAlunosBancoDados)
+		{
+			infoTurma += aluno + "\n";
+		}
+
+
+		infoTurma += "\n \nTotal de alunos:" + this.getTotalAlunos();
+		infoTurma += "\n \n---------------------------------";
+
+		return infoTurma;
 	}
+
 }

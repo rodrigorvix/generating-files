@@ -9,16 +9,17 @@ import lombok.Getter;
 
 @Getter
 public class TurmaJava extends Turma{
-	
-	private List<String> alunosJava = new ArrayList<String>();
 
-	
-	
+	private List<String> listaAlunosJava = new ArrayList<String>();
+
+
+
 	public TurmaJava() {
-		
+
 		super("Java");
-		
-		this.alunosJava.addAll(new ArrayList<String> (Arrays.asList("Alexandre Martins", 
+
+
+		this.listaAlunosJava.addAll(new ArrayList<String> (Arrays.asList("Alexandre Martins", 
 				"Vitor Hugo Lima", 
 				"Esther Rodrigues",
 				"Lavínia Cunha",
@@ -29,10 +30,26 @@ public class TurmaJava extends Turma{
 				"Pietra Martins",
 				"Thomas Peixoto",
 				"Thales Farias")));
-		
+
+		this.setTotalAlunos(this.listaAlunosJava.size());
 	}
 	
-	public void exibeAlunos() {
-		System.out.println(this.alunosJava);
+	
+	@Override
+	public String getInformacoesTurma() {
+		var infoTurma = "Nome da turma: " + this.getNomeTurma() + "\n\n";
+
+		for (String aluno : this.listaAlunosJava)
+		{
+			infoTurma += aluno + "\n";
+		}
+
+
+		infoTurma += "\n \nTotal de alunos:" + this.getTotalAlunos();
+		infoTurma += "\n \n---------------------------------";
+
+		return infoTurma;
 	}
+
+
 }

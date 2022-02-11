@@ -1,16 +1,23 @@
 package br.com.letscode.generatingfiles;
 
 import lombok.Getter;
+import lombok.Setter;
 
-
-public  class Turma {
+@Getter @Setter
+public abstract class Turma {
 	
-	@Getter private String nomeTurma;
+	 private String nomeTurma;
+	 private int totalAlunos;
+	
 	
 	
 	public Turma(String nomeTurma) {
 		
 		this.nomeTurma = nomeTurma;
 	}
+	
+	
+	 public abstract String getInformacoesTurma();
+
 
 }
