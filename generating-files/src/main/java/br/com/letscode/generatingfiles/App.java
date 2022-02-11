@@ -4,8 +4,19 @@ public class App {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Primeiro commit eclipse");
-
+		
+		
+		
+		TurmaJava alunosJava = new TurmaJava();
+		TurmaBancoDados alunosBancoDados = new TurmaBancoDados();
+		
+		
+		alunosJava.exibeAlunos();
+		
+		alunosBancoDados.exibeAlunos();
+		
+		
+		
 	}
 
 }
