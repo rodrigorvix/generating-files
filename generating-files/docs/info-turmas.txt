@@ -1,0 +1,37 @@
+Nome da turma: Java
+
+Alexandre Martins
+Vitor Hugo Lima
+Esther Rodrigues
+Lavínia Cunha
+Natália Gomes
+Yago Ramos
+Letícia Cunha
+Srta. Ana Júlia Ramos
+Pietra Martins
+Thomas Peixoto
+Thales Farias
+
+ 
+Total de alunos:11
+ 
+---------------------------------
+Nome da turma: Banco de Dados
+
+Vitor Hugo Lima
+Esther Rodrigues
+Nathan Nascimento
+Lavínia Cunha
+Natália Gomes
+Dra. Lavínia Lopes
+Yago Ramos
+Letícia Cunha
+Luiz Miguel Azevedo
+Srta. Ana Júlia Ramos
+Thales Farias
+Dra. Alana Porto
+
+ 
+Total de alunos:12
+ 
+---------------------------------
